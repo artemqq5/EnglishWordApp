@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "878097358966",
+    "project_id": "wordin-dc728",
+    "storage_bucket": "wordin-dc728.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878097358966:android:3734a8d04720b909dc7f57",
+        "android_client_info": {
+          "package_name": "com.engliword.wordin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878097358966-f7r2a0mglr7kqc479a2j14ktjf43k95p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.engliword.wordin",
+            "certificate_hash": "bc2f114f8cb508864d9924d11977b97d35a7649b"
+          }
+        },
+        {
+          "client_id": "878097358966-jgn2ttephli3ut2qibc6969tcot0if2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAUkiDpmdSS8_VssRr_7cfwR0MCjNM7_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878097358966-jgn2ttephli3ut2qibc6969tcot0if2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

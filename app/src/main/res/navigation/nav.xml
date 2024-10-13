@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/loadingFragment">
+
+    <fragment
+        android:id="@+id/navigationHome"
+        android:name="com.engliword.wordin.presentation.main.NavigationMainPage"
+        android:label="fragment_navigation_home"
+        tools:layout="@layout/fragment_navigation_main_page" />
+    <fragment
+        android:id="@+id/loadingFragment"
+        android:name="com.engliword.wordin.presentation.join.LoadingFragment"
+        android:label="fragment_loading"
+        tools:layout="@layout/fragment_loading" >
+        <action
+            android:id="@+id/action_loadingFragment_to_navigationHome"
+            app:destination="@id/navigationHome"
+            app:popUpTo="@id/loadingFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_loadingFragment_to_registrationLoginFragment"
+            app:destination="@id/registrationLoginFragment"
+            app:popUpTo="@id/loadingFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/registrationLoginFragment"
+        android:name="com.engliword.wordin.presentation.join.RegistrationLoginFragment"
+        android:label="fragment_registration_login"
+        tools:layout="@layout/fragment_registration_login" >
+        <action
+            android:id="@+id/action_registrationLoginFragment_to_navigationHome"
+            app:destination="@id/navigationHome"
+            app:popUpTo="@id/loadingFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>
