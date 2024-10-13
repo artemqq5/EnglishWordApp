@@ -66,9 +66,6 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui)
 
-    // Charts
-    implementation(libs.williamchart)
-
     // Animation Lottie
     implementation(libs.lottie)
 
@@ -76,11 +73,17 @@ dependencies {
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)
 
-    //Firebase
+    //Firebase base
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.analytics)
+
+    // Firebase auth
     implementation(libs.firebase.ui.auth)
     implementation(libs.firebase.auth)
+
+    // Firebase Firestore Database & Storage
+    implementation(libs.firebase.firestore)
+    implementation(libs.firebase.storage)
 
     // Google Play Services для аутентифікації
     implementation(libs.play.services.auth.v2070)
